@@ -1,0 +1,24 @@
+.centered-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 3rem;
+  }
+.card {
+    transition:none;
+    animation: none;
+    width: 70rem;
+    margin-left: 5rem;
+    align-self: center;
+    margin-top: 0.5rem;
+  }
+  .card-text{
+   margin-Top:1rem;
+   margin-Left:3rem;
+   text-Align:left;
+   font-size:1.75rem;
+  }
+  .custom-img-size {
+    width: 50%; /* 设置为父容器宽度的 100% */
+    height: auto; /* 高度自动调整以保持图片比例 */
+  }

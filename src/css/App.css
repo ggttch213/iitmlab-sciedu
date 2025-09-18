@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+  /* background-image: url(./image/bg.png); */
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.carousel-inner img {
+  display: block;
+  margin: 0 auto;
+ }
+ 
+ .App {
+  text-align: center;
+ }
+ .carousel1{
+  height: 50rem;
+  width: 80rem;
+
+ }
+
+ .carousel-control-prev {
+  /* 按鈕原有的樣式，例如背景色、邊框等 */
+  width: 14.5rem;
+  /* 添加黑色漸層效果 */
+  background: linear-gradient(to right, rgba(42, 201, 254, 0.676), rgba(173, 216, 230, 0));
+  background: linear-gradient(to top, rgba(254, 151, 42, 0.676), rgba(173, 216, 230, 0));
+  /* 上述代碼的解釋：
+     linear-gradient是一個CSS函數，用於創建一個線性漸層。
+     to left表示漸層的方向是從右到左。
+     rgba(0, 0, 0, 0.5)表示黑色，0.5表示漸層的透明度，你可以根據需要調整這個值。
+     rgba(0, 0, 0, 0)表示完全透明的黑色，用於漸層的結束。
+  */
+
+  /* 其他樣式，例如邊框、文字顏色等 */
+}
+.carousel{
+  margin: 0 5rem 5rem 5rem;
+}
+.carousel-control-next {
+  width: 14.5rem;
+  background: linear-gradient(to left, rgba(42, 201, 254, 0.676), rgba(173, 216, 230, 0));
+  background: linear-gradient(to top, rgba(254, 151, 42, 0.676), rgba(173, 216, 230, 0));
+}
+.carousel-inner{
+  background-color: rgba(161, 231, 255, 0.514);
+}
+.Carousel.Item:hover{
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card {
+  transition: transform 0.3s ease;
+  animation: floatAnimation 30s infinite;
+  width: 30rem;
+  margin-left: 5rem;
+  
+}
+
+.but1{
+  background-color: #61dafb;
+  border-color: white;
+  color: black;
+  font-family: 微軟正黑體;
+}
+
+
+@media (max-width: 768px) {
+  .image-container img{
+    width: 350px;
+
+  }
+  .carousel1 {
+    height: 425px; /* Adjust the height of the carousel for smaller screens */
+    width: 100%; /* Make the carousel full width on smaller screens */
+  }
+  .carousel-control-next{
+    width: auto;
+  }
+  .carousel-control-prev{
+    width: auto;
+  }
+  .carousel{
+    margin: 0;
+  }
+ .APP .card {
+    width: 100%; /* 让卡片宽度充满屏幕 */
+    margin-bottom: 1rem; /* 添加底部边距 */
+    margin-left: 0;
+    display: block;
+  }
+.d-flex{
+  display: block!important;
+}
+  .card-img-top {
+     /* 调整 Card 图片高度 */
+    width: 100%;
+    object-fit: cover; /* 图片充满整个容器，可能需要根据实际效果调整 */
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .but1 {
+    width: 100%; /* 让按钮宽度充满卡片 */
+  }
+}
+
+/* Additional media queries for other screen sizes if needed */
+@media (min-width: 769px) and (max-width: 992px) {
+  .carousel{
+    margin: 0;
+  }
+  .carousel1 {
+    height: 500px; /* Adjust the height of the carousel for smaller screens */
+    width: 100%; /* Make the carousel full width on smaller screens */
+  }
+  .carousel-control-next{
+    width: auto;
+  }
+  .carousel-control-prev{
+    width: auto;
+  }
+  .App .card {
+    width: 100%; /* Make cards full width on smaller screens */
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .but1 {
+    width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .carousel{
+    margin: 0;
+  }
+  .carousel1 {
+    height: 700px; /* Adjust the height of the carousel for smaller screens */
+    width: 100%; /* Make the carousel full width on smaller screens */
+  }
+  .carousel-control-next{
+    width: auto;
+  }
+  .carousel-control-prev{
+    width: auto;
+  }
+  .card {
+    width: 100%; /* Make cards full width on smaller screens */
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-top: 1rem;
+  }
+
+  .but1 {
+    width: 100%; /* Make buttons full width on smaller screens */
+  }
+}
+@media (min-width:1400px){
+  .card{
+    width: '10rem';
+    margin-left:"5rem";
+    margin-top:"1rem" ;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(45%); /* 卡片向左浮动50%的屏幕宽度 */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

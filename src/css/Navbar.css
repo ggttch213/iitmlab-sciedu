@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #b3e7f5; */
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0);
+   }
+   .ocTitle{
+    padding-top: 30px;
+    font-family: 標楷體;
+    font-size: 50px;
+    text-shadow: 
+        -1px -1px 0 #000000,  
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000; /* 文字描边颜色 */
+   }
+   .navbar-brand,
+   .nav-link {
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 微軟正黑體;
+    font-size: larger;
+    font-weight: bolder;
+   }
+   /* 在你的CSS样式表中添加以下样式 */
+/* 在你的CSS样式表中添加以下样式 */
+.nav-link:hover {
+    background-color: white; /* 设置悬停时的背景颜色 */
+    border-radius: 5px; /* 添加圆角边框 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    color:black ;
+  }
+  .nav-link a.active {
+    background-color: white; /* 设置悬停时的背景颜色 */
+    border-radius: 5px; /* 添加圆角边框 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    color:black ;
+  }  
+   
+   .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+   }
+   
+   .nav-item {
+    margin-left: 1rem;
+   }
+   .navbar-text{
+    font-family: "微軟正黑體";
+   }
+   .navbarrr{
+    background-color: rgba(0, 0, 0, 0);
+    
+   }
+
+   body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/bg.png'); /* 替换为你的背景图像路径 */
+    background-size: cover; /* 使背景图像覆盖整个页面 */
+    background-position: center; /* 使背景图像居中 */
+    background-repeat: no-repeat; /* 禁止背景图像重复 */
+  }
+  @media (max-width: 768px) {
+    .navlogo{
+      margin-left: 35%;
+      width: 7rem;
+      height: 7rem;
+    }
+    .ocTitle{
+
+      font-family: 標楷體;
+      font-size:36px;
+      text-align: center;
+     }
+
+  }

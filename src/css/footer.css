@@ -1,0 +1,63 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    flex-direction: row;
+
+  }
+  
+  .footerCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 252, 252);
+  }
+  
+  .footerCard:hover {
+    transform: none;
+    box-shadow: none;
+    transition: none;
+  }
+  
+  .IYBSSD {
+    width: 10rem;
+    padding: 2rem;
+    /* 如果需要限制图片的高度，可以添加以下样式 */
+    max-height: 100%;
+    margin:0 2rem  ;
+  }
+  .NKUST{
+    display: flex;
+    width: 400px;
+    height: 120px;
+    margin:0 2rem  ;
+  }
+  .NSTC{
+    display: flex;
+    width: 400px;
+    height: 120px;
+    margin:0 2rem  ;
+  }
+  @media (max-width: 768px) {
+.footerCard{
+  display: block;
+  
+}
+.IYBSSD{
+  padding: 0;
+  margin-left: 7rem;
+  height: 10rem;
+  
+}
+.NKUST{
+  width: 20rem;
+  height: 5rem;
+}
+.NSTC{
+  width: 20rem;
+  height: 5rem;
+}
+  }

@@ -1,0 +1,29 @@
+.image-container img{
+    width: 400px;
+    margin: 2rem;
+    height: 350px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: rgb(130, 237, 241) solid 10px;
+    border-radius: 5%;
+}
+.image-container img:hover {
+    transform: scale(1.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease, transform 1s ease;
+  }
+.image-container{
+
+    text-align: center;
+
+}
+.gallery{
+    background-image: url(../image/bg.png);
+}
+@media (max-width: 768px) {
+    .image-container img{
+      width: 350px;
+  
+    }
+}

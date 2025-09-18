@@ -1,0 +1,120 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #d2edf4; /* 海洋风格的背景颜色 */
+}
+
+.content-wrapper {
+  background-color: #ffffff; /* 白色背景 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.group-photo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.group-photo {
+  width: 100%;
+  max-width: 1000px; /* 增大团体照片的宽度 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* 卡片之间的间距 */
+}
+
+.member-card {
+  background-color: #d9eaf3; /* 海洋风格的卡片背景颜色 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 330px; /* 调整卡片宽度，以便每行放置三个成员 */
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.member-card img {
+  border-radius: 25%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.5em; /* 调整字体大小 */
+  font-weight: bold;
+}
+
+.member-card h4 {
+  color: #336699; /* 深蓝色 */
+  font-size: 1.3em; /* 调整字体大小 */
+  font-weight:bold;
+}
+
+.member-card p {
+  color: #666666;
+  font-size: 1.2em; /* 调整字体大小 */
+  line-height: 1;
+}
+
+.teacher-card {
+  background-color: #f7d5b5; /* 教师卡片的背景颜色 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* 卡片宽度为整个页面的宽度 */
+}
+
+.teacher-card img {
+  border-radius: 15%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.teacher-card h3 {
+  font-size: 1.8em; /* 调整字体大小 */
+  font-weight: bold;
+}
+
+.teacher-card h4 {
+  font-size: 1.5em; /* 调整字体大小 */
+  font-weight: bold;
+}
+
+.teacher-description {
+  text-align: center; /* 将文本居中 */
+  font-size: 1.2em; /* 调整字体大小 */
+}
+
+.teacher-description p {
+  margin: 5px 0; /* 减小段落之间的间距 */
+  font-size: 22px;
+}
+
+.teacher-description .label {
+  display: inline-block;
+  width: 80px; /* 调整这个值来设置标签的宽度，以确保对齐 */
+  text-align: left; /* 将标签内容左对齐 */
+}

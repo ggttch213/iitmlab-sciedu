@@ -1,0 +1,104 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+.card {
+    transition:none;
+    animation: none;
+    width: 80rem;
+    margin-left: 5rem;
+    align-self: center;
+    margin-top: 5rem;
+  }
+  .card-text{
+   margin-Top:1rem;
+   margin-Left:3rem;
+   text-Align:left;
+   font-size:1.75rem;
+  }
+
+  @media (max-width: 768px) {
+    .card-text{
+      margin-Top:1rem;
+      margin-Left:3rem;
+      text-Align:left;
+      font-size:1rem;
+     }
+    .carousel{
+        margin: 0;
+      }
+   .card {
+      width: 100%; /* 让卡片宽度充满屏幕 */
+      margin-bottom: 1rem; /* 添加底部边距 */
+      margin-left: 0;
+    }
+  
+    .card-img-top {
+    height: 350px; /* 调整 Card 图片高度 */
+      width: 100%;
+      object-fit: cover; /* 图片充满整个容器，可能需要根据实际效果调整 */
+    }
+  
+    .card-body {
+      padding: 1rem;
+    }
+  
+    .but1 {
+      width: 100%; /* 让按钮宽度充满卡片 */
+    }
+  }
+  
+  /* Additional media queries for other screen sizes if needed */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .carousel1 {
+      height: 500px; /* Adjust the height of the carousel for smaller screens */
+      width: 100%; /* Make the carousel full width on smaller screens */
+    }
+    .carousel-control-next{
+      width: auto;
+    }
+    .carousel-control-prev{
+      width: auto;
+    }
+    .App .card {
+      width: 100%; /* Make cards full width on smaller screens */
+      margin-left: 0;
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  
+    .but1 {
+      width: 100%; /* Make buttons full width on smaller screens */
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {
+    .carousel1 {
+       /* Adjust the height of the carousel for smaller screens */
+      width: 100%; /* Make the carousel full width on smaller screens */
+    }
+    .carousel-control-next{
+      width: auto;
+    }
+    .carousel-control-prev{
+      width: auto;
+    }
+    .card {
+      width: 100%; /* Make cards full width on smaller screens */
+      margin-left: 0; /* Remove left margin on smaller screens */
+      margin-top: 1rem;
+    }
+  
+    .but1 {
+      width: 100%; /* Make buttons full width on smaller screens */
+    }
+  }
+  @media (min-width:1400px){
+    .card{
+      width: '10rem';
+      margin-left:"5rem";
+      margin-top:"1rem" ;
+    }
+  }
